@@ -7,10 +7,22 @@ function Navbar() {
       <Link to="/">
         <img src={Logo} />
       </Link>
-      <Link to="/">Hjem</Link>
-      <a href="/#projekter">Projekter</a>
-      <Link to="/om-mig">Om mig</Link>
-      <a href="/#kontakt">Kontakt</a>
+      <div>
+        <Link className="nav-text" to="/">
+          Hjem
+        </Link>
+        <a className="nav-text" href="/#projekter">
+          Projekter
+        </a>
+        <Link className="nav-text" to="/om-mig">
+          Om mig
+        </Link>
+        <div className="cta-button">
+          <a className="nav-text" href="/#kontakt">
+            Kontakt
+          </a>
+        </div>
+      </div>
     </nav>
   );
 }
