@@ -113,7 +113,7 @@ p {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,6 +122,11 @@ nav {
   padding: 0.8rem;
   flex-wrap: wrap;
   gap: 1rem;
+  z-index: 10;
+}
+
+nav img {
+  height: var(--CTA-size) + 0.5rem;
 }
 
 nav div {
@@ -219,6 +224,7 @@ nav div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-top: 6.5rem;
 }
 
 .project-wrapper {

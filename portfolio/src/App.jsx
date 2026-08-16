@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/om-mig" element={<AboutMePage />}></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </Router>
   );

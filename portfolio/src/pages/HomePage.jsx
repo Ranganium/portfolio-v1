@@ -38,7 +38,7 @@ function HomePage() {
       </section>
 
       {/* PROJECTS SECTION */}
-      <section className="projects-section">
+      <section className="projects-section" id="projekter">
         <h2>Projekter</h2>
 
         {/* MER' END TOAST */}
@@ -127,7 +127,7 @@ function HomePage() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="contact-section">
+      <section className="contact-section" id="kontakt">
         <h2>Kontakt</h2>
         <div className="contact-content">
           <p>
