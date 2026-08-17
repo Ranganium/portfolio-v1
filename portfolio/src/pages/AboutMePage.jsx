@@ -1,5 +1,8 @@
+// Mønster
 import aboutPattern from "../assets/about-pattern.svg";
+// billede
 import JeppeBillede from "../assets/jeppe-billede.jpg";
+// Logoer og ikoner
 import figmaLogo from "../assets/figma-logo.svg";
 import illustratorLogo from "../assets/illustrator-logo.svg";
 import cssLogo from "../assets/css-logo.svg";
@@ -8,6 +11,13 @@ import reactLogo from "../assets/react-logo.svg";
 import javascriptLogo from "../assets/javascript-logo.svg";
 import githubLogo from "../assets/github-logo.svg";
 import gitLogo from "../assets/git-logo.svg";
+import trainingIcon from "../assets/training-icon.svg";
+import gameIcon from "../assets/game-icon.svg";
+import bakingIcon from "../assets/baking-icon.svg";
+import questioningIcon from "../assets/questioning-icon.svg";
+// props
+import ImgPoint from "../components/ImgPoint.jsx";
+import AcordionMenu from "../components/AcordionMenu.jsx";
 
 function AboutMePage() {
   return (
@@ -62,8 +72,48 @@ function AboutMePage() {
             <h3>Værktøjskasse</h3>
             <div className="tool-box-stuff">
               <div className="about-icons">
-                <img src="" alt="Figma" />
+                <img src={figmaLogo} alt="Figma" />
+                <img src={illustratorLogo} alt="Adobe Illustrator" />
               </div>
+              <span>Design & prototyping</span>
+            </div>
+            <div className="tool-box-stuff">
+              <div className="about-icons">
+                <img src={cssLogo} alt="CSS" />
+                <img src={htmlLogo} alt="HTML" />
+                <img src={reactLogo} alt="React" />
+                <img src={javascriptLogo} alt="JavaScript" />
+              </div>
+              <span>Frontendudvikling</span>
+            </div>
+            <div className="tool-box-stuff">
+              <div className="about-icons">
+                <img src={githubLogo} alt="GitHub" />
+                <img src={gitLogo} alt="git" />
+              </div>
+              <span>Samarbejde & versionsstyring</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-column">
+          <div className="interests-box">
+            <h3>Interesser</h3>
+            <div className="interest-box">
+              <ImgPoint img={trainingIcon} point="Træning" />
+              <ImgPoint img={gameIcon} point="Spille masser af computer" />
+              <ImgPoint img={bakingIcon} point="Bagning & generel madlavning" />
+              <ImgPoint
+                img={questioningIcon}
+                point="Finde ud af hvorfor ting fungerer"
+              />
+            </div>
+          </div>
+
+          <div className="experience-box">
+            <h3>Erfaring</h3>
+            <div>
+              <AcordionMenu />
             </div>
           </div>
         </div>
