@@ -15,9 +15,15 @@ import trainingIcon from "../assets/training-icon.svg";
 import gameIcon from "../assets/game-icon.svg";
 import bakingIcon from "../assets/baking-icon.svg";
 import questioningIcon from "../assets/questioning-icon.svg";
+
+import educationIcon from "../assets/education-icon.svg";
+import workIcon from "../assets/work-icon.svg";
+import volonteerIcon from "../assets/volonteer-icon.svg";
+import europeanIcon from "../assets/european-icon.svg";
+
 // props
 import ImgPoint from "../components/ImgPoint.jsx";
-import AcordionMenu from "../components/AcordionMenu.jsx";
+import ExperienceCard from "../components/ExperienceCard.jsx";
 
 function AboutMePage() {
   return (
@@ -75,6 +81,7 @@ function AboutMePage() {
                 <img src={figmaLogo} alt="Figma" />
                 <img src={illustratorLogo} alt="Adobe Illustrator" />
               </div>
+              <div className="orange-line"></div>
               <span>Design & prototyping</span>
             </div>
             <div className="tool-box-stuff">
@@ -84,6 +91,7 @@ function AboutMePage() {
                 <img src={reactLogo} alt="React" />
                 <img src={javascriptLogo} alt="JavaScript" />
               </div>
+              <div className="orange-line"></div>
               <span>Frontendudvikling</span>
             </div>
             <div className="tool-box-stuff">
@@ -91,6 +99,7 @@ function AboutMePage() {
                 <img src={githubLogo} alt="GitHub" />
                 <img src={gitLogo} alt="git" />
               </div>
+              <div className="orange-line"></div>
               <span>Samarbejde & versionsstyring</span>
             </div>
           </div>
@@ -99,7 +108,7 @@ function AboutMePage() {
         <div className="about-column">
           <div className="interests-box">
             <h3>Interesser</h3>
-            <div className="interest-box">
+            <div className="interests">
               <ImgPoint img={trainingIcon} point="Træning" />
               <ImgPoint img={gameIcon} point="Spille masser af computer" />
               <ImgPoint img={bakingIcon} point="Bagning & generel madlavning" />
@@ -112,9 +121,44 @@ function AboutMePage() {
 
           <div className="experience-box">
             <h3>Erfaring</h3>
-            <div>
-              <AcordionMenu />
-            </div>
+            <ExperienceCard
+              icon={educationIcon}
+              title="HTX-linje Kommunikation & IT"
+              competencies={["Testmetoder", "Digital design", "Samarbejde"]}
+              description={[
+                "Jeg gik 3 år på HTX i Skjern (2021-2024) med linjen Kommunikation og IT, hvor vi lavede grafisk design og print design i Adobe Illustrator og andre programmer.",
+                "Jeg havde Digital Design & Udvikling som teknikfag. Her skulle man lave spil i Unity. I mit team fungerede jeg hovedsageligt som designer af de forskellige dele af spillet.",
+              ]}
+            />
+            <ExperienceCard
+              icon={workIcon}
+              title="Butiksmedarbejder i købmand"
+              competencies={["Ansver", "Kundeservice", "oplæring"]}
+              description={[
+                "Jeg arbejdede 2,5 år ved Ådum købmand (2022-2024), hvor jeg virkelig lærte ansvar og glæden ved at glæde andre.",
+                "Kundeservice var top prioritet og jeg har haft mange snakke med forskellige slags kunder lige fra fulde svajende mænd til virkelig alene gamle folk uden andre.",
+              ]}
+            />
+            <ExperienceCard
+              icon={volonteerIcon}
+              title="Volontør på KFUM soldaterhjem"
+              competencies={["Samarbejde", "Selvrealisering"]}
+              description={[
+                "Jeg var volontør på KFUM Soldaterhjem i Varde i 5 måneder i 2024. Min hovedsagelige rolle var at lave grillmad til soldater, som bestilte. Derudover var jeg også med ude på skydebanerne og solgte mad der, når nogen bestilte vognen.",
+                "Jeg lavede dog andet arbejde, fordi lederen troede på at man skulle lave det man var god til. Jeg var mest i opvasken, blev også sat til at lave den daglige kage og designe nye skilte dertil. Han er også kommet med en anbefaling.",
+                "Jeppe har en systematisk tilgang til opgaver, og det har været en stor hjælp i forhold til effektiviseringen af vores produktramme.",
+                "Jeppe er ansvarlig, arbejdsom, loyal og en rigtig god kollega. Vi kan derfor give Jeppe Kristensen vores bedste anbefalinger” - Erik Hein, Soldaterhjemsleder",
+              ]}
+            />
+            <ExperienceCard
+              icon={europeanIcon}
+              title="Internationalt projekt/ ERASMUS+"
+              competencies={["Kulturforståelse"]}
+              description={[
+                "Vi har haft et tværkulturelt projekt med studerende fra Holland, hvor vi skulle lave en oplevelse, som skulle fremme kulturel forståelse.",
+                "Derudover har jeg været på et udvekslingsforløb med nogle elever fra Italien, hvor vi tog til Italien og oplevede deres kultur ved at bo individuelt ved deres familier.",
+              ]}
+            />
           </div>
         </div>
       </div>

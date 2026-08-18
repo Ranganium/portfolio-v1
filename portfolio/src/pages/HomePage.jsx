@@ -135,7 +135,7 @@ function HomePage() {
             kontakte mig på de her medier
           </p>
           <div className="contact-info-wrapper">
-            <a
+            <div
               href="https://www.linkedin.com/in/jeppe-kristensen-548240427"
               className="contact-info-container"
             >
@@ -144,8 +144,8 @@ function HomePage() {
                 to="https://www.linkedin.com/in/jeppe-kristensen-548240427"
                 text="Jeppe Kristensen"
               />
-            </a>
-            <a
+            </div>
+            <div
               href="mailto:j.korsgaard.kristensen@gmail.com"
               className="contact-info-container"
             >
@@ -154,7 +154,7 @@ function HomePage() {
                 to="mailto:j.korsgaard.kristensen@gmail.com"
                 text="j.korsgaard.kristensen@gmail.com"
               />
-            </a>
+            </div>
           </div>
         </div>
       </section>
